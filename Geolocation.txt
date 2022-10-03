@@ -1,3 +1,5 @@
+curl https://www.google.com:443/maps 
+
 g = Rex::Google::Geolocation.new
 g.set_api_key('AIzaSyC_YtVEHyk108EIJhmWJVZ9oaxFeOEaKL8')
 g.add_wlan("00:11:22:33:44:55", "example", -80)
