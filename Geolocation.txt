@@ -1,0 +1,17 @@
+g = Rex::Google::Geolocation.new
+g.set_api_key('AIzaSyC_YtVEHyk108EIJhmWJVZ9oaxFeOEaKL8')
+g.add_wlan("00:11:22:33:44:55", "example", -80)
+g.fetch!
+puts g,php $json = file_get_contents('https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyC_YtVEHyk108EIJhmWJVZ9oaxFeOEaKL8')
+
+Other Things to look at
+
+https://googlemaps.github.io/v3-utility-library/globals.html
+
+url: 'https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyC_YtVEHyk108EIJhmWJVZ9oaxFeOEaKL8' + token, body: data, json: true, headers: { 'Content-Type': 'application/json', }
+
+https://location.services.mozilla.com/v1/geolocate?key=%AIzaSyC_YtVEHyk108EIJhmWJVZ9oaxFeOEaKL8%
+
+https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyC_YtVEHyk108EIJhmWJVZ9oaxFeOEaKL8
+
+http://maps.google.com/maps/api/staticmap?center=37.793796,%20-122.406302&zoom=16&size=640x640&markers=color:red%7C37.793796,%20-122.406302&sensor=true&key=AIzaSyC_YtVEHyk108EIJhmWJVZ9oaxFeOEaKL8
